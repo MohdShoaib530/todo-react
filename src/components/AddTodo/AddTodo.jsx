@@ -11,7 +11,10 @@ function AddTodo({updateList}){
                value={inputText}
                onChange={e => setInputText(e.target.value)}
                />
-            <button onClick={() => updateList(inputText)}>Add Todo</button>
+            <button onClick={() => {
+                updateList(inputText)
+                setInputText('')
+            }} >Add Todo</button>
         </div>
     )
 }

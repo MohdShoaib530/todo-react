@@ -13,8 +13,8 @@ function App() {
     <div>
       <AddTodo updateList={(todo) => setList([
         ...list,{id:list.length + 1, todoData:todo, finished: false},
-      ])}/>
-      <TodoList list={list}/>
+      ])} />
+      <TodoList list={list} updateList={setList}/>
     </div>
   )
 }
