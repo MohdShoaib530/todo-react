@@ -6,7 +6,7 @@ function TodoList({ list, updateList }) {
       {list.map((todo) => (
         <Todo
           id={todo.id}
-          isFinished={todo.isFinished}
+          isFinished={todo.finished}
           todoData={todo.todoData}
           key={todo.id}
           changeFinished={(isFinished) => {
