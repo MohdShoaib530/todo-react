@@ -1,0 +1,36 @@
+.todo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    
+}
+.todo >button {
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.todo > input[type='checkbox'] {
+    transform: scale(2); 
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.text-work {
+    border: 2px solid black;
+    padding: 1px 10px;
+    border-radius: 10px;
+}
+
+.text-work:hover {
+    background-color: #099709;
+}
+.work-status {
+    margin-right: 8px;
+}
+
+
+

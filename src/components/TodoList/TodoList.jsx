@@ -2,6 +2,7 @@ import Todo from "../Todo/Todo";
 import TodoContext from "../../context/TodoContext";
 import { useContext } from "react";
 import todoDispatchContext from "../../context/todoDispatchContext";
+import './TodoList.css'
 
 function TodoList() {
   const {list} = useContext(TodoContext);
@@ -21,7 +22,7 @@ function TodoList() {
   }
 
   return (
-    <div>
+    <div className="todo-list">
       {list.map((todo) => (
         <Todo
           id={todo.id}

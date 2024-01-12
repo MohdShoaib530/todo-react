@@ -1,12 +1,13 @@
 import { useContext, useState } from "react";
 import todoDispatchContext from "../../context/todoDispatchContext";
+import './AddTodo.css'
 
 function AddTodo(){
     const [inputText,setInputText] = useState("");
     const {dispatch} = useContext(todoDispatchContext)
 
     return(
-        <div>
+        <div className="add-todo">
             <input
                type="text"
                placeholder="Add your next todo"
