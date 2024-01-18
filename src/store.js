@@ -5,7 +5,7 @@ const store = configureStore({
     reducer: {
         todo: todoReducer
     },
-    devTools: process.env.NODE_ENV !== 'production'
+    devTools: true
  });
 
 export default store;
